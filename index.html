@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiya John — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <div class="logo-icon">JJ</div>
+      <span class="logo-name">Jiya John</span>
+    </div>
+    <nav class="navbar__links">
+      <a href="#home"     class="nav-link active">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#about"    class="nav-link">About</a>
+      <a href="#contacts" class="nav-link">Contacts</a>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════
+       HOME
+  ══════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+    <div class="hero__content">
+      <h1 class="hero__name">
+        <span class="name-word">JIYA</span>
+        <span class="name-word">JOHN</span>
+      </h1>
+      <div class="roles">
+        <div class="role-chip role--1"><span class="role-dot"></span>Software Engineer</div>
+        <div class="role-chip role--2"><span class="role-dot"></span>Information Security Manager</div>
+        <div class="role-chip role--3"><span class="role-dot"></span>AI / ML Enthusiast</div>
+        <div class="role-chip role--4"><span class="role-dot"></span>Data Analyst</div>
+        <div class="role-chip role--5"><span class="role-dot"></span>Web Developer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects" class="projects">
+    <div class="projects__inner">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="title-line"></div>
+
+      <div class="cat-carousel">
+        <button class="arrow-btn" id="prevBtn" aria-label="Previous">&#8249;</button>
+        <div class="cat-viewport">
+          <button class="cat-slot slot-prev"   id="slotPrev"></button>
+          <button class="cat-slot slot-active" id="slotActive"></button>
+          <button class="cat-slot slot-next"   id="slotNext"></button>
+        </div>
+        <button class="arrow-btn" id="nextBtn" aria-label="Next">&#8250;</button>
+      </div>
+
+      <div class="panels-wrap">
+        <!-- Web Developer -->
+        <div class="proj-panel active" data-cat="web">
+          <div class="proj-grid proj-grid--5">
+            <a href="web-dev-tools.html" target="_blank" class="proj-card card-a">
+              <span class="proj-title">Web Developer Tools and Skills</span>
+            </a>
+
+            <a href="https://speedreader.page.gd/" target="_blank" class="proj-card card-b">
+              <span class="proj-title">Speed Reader Website</span>
+            </a>
+
+            <a href="https://taste-trail-application.vercel.app/" target="_blank" class="proj-card card-c">
+              <span class="proj-title">Taste Trail Application</span>
+            </a>
+
+            <a href="https://repo-decoder-fel3.onrender.com" target="_blank" class="proj-card card-d">
+              <span class="proj-title">Repo Decoder</span>
+            </a>
+
+            <a href="https://jiya-john.github.io/cookmate/" target="_blank" class="proj-card card-e">
+              <span class="proj-title">CookMate Website</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Software Engineer -->
+        <div class="proj-panel" data-cat="software">
+          <div class="proj-grid proj-grid--3">
+            <div class="proj-card card-a">Skills and Knowledge</div>
+            <div class="proj-card card-b">Document Controller for Construction Field</div>
+            <div class="proj-card card-c">Supermarket Management System</div>
+          </div>
+        </div>
+        <!-- Info Security -->
+        <div class="proj-panel" data-cat="security">
+          <div class="proj-grid proj-grid--2">
+            <div class="proj-card card-a">Awareness on Information Security</div>
+            <div class="proj-card card-b">Tasks Performed</div>
+          </div>
+        </div>
+        <!-- AI / ML -->
+        <div class="proj-panel" data-cat="aiml">
+          <div class="proj-grid proj-grid--5">
+            <div class="proj-card card-a">Grants Assist Chatbot using Llama</div>
+            <div class="proj-card card-b">Conversational AI Using the DailyDialog Dataset</div>
+            <div class="proj-card card-c">Yelp Review Sentiment Classification using LSTM and DistilBERT</div>
+            <div class="proj-card card-d">Crop Yield Prediction and Plant Disease Detection</div>
+            <div class="proj-card card-e">Real Time Sentiment Analysis on Amazon Reviews</div>
+          </div>
+        </div>
+        <!-- Data Analytics -->
+        <div class="proj-panel" data-cat="data">
+          <div class="proj-grid proj-grid--4">
+            <div class="proj-card card-a">Data Analytics Skills</div>
+            <div class="proj-card card-b">Analyzing Hotel Booking Cancellations</div>
+            <div class="proj-card card-c">Breast Cancer Dataset Analysis</div>
+            <div class="proj-card card-d">Analysis, Findings and Recommendations for Dementia and Social Isolation</div>
+          </div>
+        </div>
+      </div><!-- /panels-wrap -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="about__inner">
+
+      <p class="about__eyebrow">ABOUT ME</p>
+      <h2 class="about__heading">Hello! I'm <strong>JIYA JOHN</strong></h2>
+
+      <div class="about__body">
+        <!-- Left: photo -->
+        <div class="about__photo-wrap">
+          <img src="images/jiya_john.png" alt="Jiya John" class="about__photo" />
+        </div>
+
+        <!-- Right: bio -->
+        <div class="about__bio">
+          <p>
+            I am a software developer with a strong foundation in full-stack web development
+            and machine learning. I hold a B.Tech. in Computer Science and two graduate
+            certificates from Humber College — one in AI with Machine Learning and one in Web
+            Development — reflecting my commitment to staying at the forefront of modern technology.
+          </p>
+          <p>
+            My technical experience spans React, Python, JavaScript, REST APIs, Azure, DBMS,
+            OOP, and more. Prior to my studies in Canada, I spent over two years as an
+            Information Security Manager at Tata Consultancy Services in India, where I led
+            cross-functional technology initiatives, conducted security audits, and managed
+            software lifecycle coordination at an organizational scale.
+          </p>
+          <p>
+            I am driven by a passion for building software that solves real problems —
+            combining technical precision with a user-focused mindset to deliver solutions
+            that are both functional and meaningful.
+          </p>
+
+          <a href="#contacts" class="btn-contact">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTS
+  ══════════════════════════════ -->
+  <section id="contacts" class="contacts">
+    <div class="contacts__inner">
+
+      <h2 class="section-title contacts__title">CONTACT ME</h2>
+      <div class="title-line contacts__line"></div>
+      <p class="contacts__sub">Let's connect and share our thoughts</p>
+
+      <div class="contact-links">
+
+        <a href="https://github.com/Jiya-John" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-handle">Jiya-John</span>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jiya-j/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-handle">jiya-j</span>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <a href="mailto:jiyajohn015@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <span class="contact-label">Mail</span>
+          <span class="contact-handle">jiyajohn015@gmail.com</span>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
